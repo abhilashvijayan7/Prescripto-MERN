@@ -5,10 +5,11 @@ import header_img from "../../assets/assets_frontend/header_img.png";
 import arrow_icon from "../../assets/assets_frontend/arrow_icon.svg";
 import { Link } from "react-router-dom";
 import General_physician from "../../assets/assets_frontend/General_physician.svg";
+import doc1 from "../../assets/assets_frontend/doc1.png";
 function HomePage() {
   return (
     <div className="home-container">
-      <nav className="flex justify-between items-center border-b-[1px] max-w-[1050px] border-[#ADADAD] mx-auto text-[14px] flex-wrap ">
+      <nav className="flex justify-between items-center border-b-[1px] mx-[10%] border-[#ADADAD]  text-[14px] flex-wrap ">
         <img src={logo} alt="navlogo" className="w-44 my-5" />
         <ul className="flex space-x-5  font-poppins font-medium">
           <li>HOME</li>
@@ -21,7 +22,7 @@ function HomePage() {
         </Link>
       </nav>
 
-      <section className="book-appointment bg-[#5F6FFF] max-w-[1050px] mx-auto mt-5 flex px-20 gap-10 rounded-lg">
+      <section className="book-appointment bg-[#5F6FFF] mx-[10%] mt-5 flex px-20  rounded-lg">
         <div className=" pb-24">
           <h1 className="text-[45px] font-outfit font-[550] text-[#FFFFFF] leading-[4rem] mt-36">
             Book Appointment With Trusted Doctors
@@ -43,15 +44,16 @@ function HomePage() {
           </button>
         </div>
         <div className="flex items-end">
-          <img src={header_img} alt="" className="w-[100%] " />
+          <img src={header_img} alt="" className="w-full  " />
         </div>
       </section>
 
-      <section className="doctor-catogery max-w-[1050px] mx-auto mt-16 font-outfit">
-        <div className="flex flex-col items-center max-w-[350px] mx-auto ">
+      <section className="doctor-catogery mx-[10%] my-16 font-outfit ">
+        <div className="flex flex-col items-center  ">
           <h2 className="text-[30px] font-[500]">Find by Speciality</h2>
-          <p className="font-normal text-center text-sm mt-3">
+          <p className="font-normal text-center text-sm mt-3 mx-[31%] ">
             Simply browse through our extensive list of trusted doctors,
+            <br />
             schedule your appointment hassle-free.
           </p>
         </div>
@@ -88,22 +90,30 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="total-doctor-container">
-        <div>
-          <h2>Top Doctors to Book</h2>
-          <p>Simply browse through our extensive list of trusted doctors.</p>
+      <section className="total-doctor-container font-outfit my-16">
+        <div className="flex flex-col items-center ">
+          <h2 className="text-3xl font-medium">Top Doctors to Book</h2>
+          <p className="text-center">
+            Simply browse through our extensive list of trusted doctors.
+          </p>
         </div>
 
-        <div className="doctor-card">
-          <img src="" alt="" />
+        <div className="doctor-card-container grid ">
           <div>
-          <p></p>
-          <p>Available</p>
+            <img src={doc1} alt="" />
+            <div>
+              <p></p>
+              <p>Available</p>
+            </div>
+            <p>Dr. Richard James</p>
+            <p>General physician</p>
           </div>
-<p>Dr. Richard James</p>
-<p>General physician</p>
         </div>
+
+        <Link>more</Link>
       </section>
+
+      <p>hi</p>
     </div>
   );
 }
