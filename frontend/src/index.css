@@ -16,4 +16,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.doctor-card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+    column-gap: 1rem;
+    row-gap: 1.5rem;
+}
 
